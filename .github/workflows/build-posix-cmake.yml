@@ -9,7 +9,7 @@ jobs:
   build-posix-cmake:
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest]
+        os: [ubuntu-22.04]
         use_namespace: [false, true]
 
     runs-on: ${{ matrix.os }}
